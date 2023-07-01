@@ -1,4 +1,4 @@
-# Welcome to my Portfolio repository!
+# Welcome to my Portfolio!
 Here, you will find a collection of my past projects and assignments that showcase my skills and experience in game / software development. This repository is organized into three main folders:
 
 Old_Unity_Projects: This folder contains a selection of Unity projects that I worked on during my high school years. While these projects may be outdated, they demonstrate my early experience with game development and highlight my familiarity with Unity.
