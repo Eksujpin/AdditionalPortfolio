@@ -1,23 +1,7 @@
+Welcome to the Statwars project! Statwars is a mobile game that was developed as a short project. The game is designed for two players and is played on a single device. Each player builds a character card and then battles against each other.
 
-Basic info:
-- The game is played on one device.
-- The game requires 2 players.
-- Does not require a network connection.
+During the development of this project, my primary focus was on gameplay and animation programming, as well as testing.
 
 Requirments:
 - Android device preferably a phone.
 - Android version 6.0 (marshmellow) or newer.
-
-How to install:
-1. Transfer 'StatWars4.1.apk' file to a folder on the device.
-2. Go to Myfiles, and find the file.
-3. Run file from the phone.
-4. On pop up window, go to settings.
-5. Enable "Unknown sources".
-6. Press okay to pop up message.
-7. Press install in bottom right corner.
-8. App will be installed.
-9. Press open.
-
-To run again:
-Find the app on the phone (swipe up, and maybe left).
