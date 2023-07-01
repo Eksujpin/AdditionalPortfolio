@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "825635205821",
+    "project_id": "scooter-sharing-42536",
+    "storage_bucket": "scooter-sharing-42536.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825635205821:android:f88f3b5ec4d74e309fbdd4",
+        "android_client_info": {
+          "package_name": "dk.itu.moapd.scootersharing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825635205821-oo1o44f1dtjdh6f89g77pu59a2g1t5kr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dk.itu.moapd.scootersharing",
+            "certificate_hash": "4f260c8b5aeaa0685fc4ab986d5de4739c5de2ad"
+          }
+        },
+        {
+          "client_id": "825635205821-2sa6mdacnvm8u8imh9n5tghmd4repk08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8cFd5hXN2I8jI3xEFOxoIUapCOKICtTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825635205821-2sa6mdacnvm8u8imh9n5tghmd4repk08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

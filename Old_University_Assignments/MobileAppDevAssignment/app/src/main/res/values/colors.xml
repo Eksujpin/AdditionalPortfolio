@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- default color set -->
+
+
+    <!--my colors
+    https://material.io/resources/color/#!/?view.left=0&view.right=1&primary.color=dfff00&secondary.color=4040ff
+    -->
+    <color name="rtd_light">#ffff59</color>
+    <color name="rtd_def">#DFFF00</color>
+    <color name="rtd_dark">#a9cc00</color>
+    <color name="blue_def">#2200ff</color>
+    <color name="blue_dark">#0000ca</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

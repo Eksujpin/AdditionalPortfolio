@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\ItuGit\\Functional programming\\NewGroupAssignments\\ScrabbleTemplate\\ScrabbleBot\\ScrabbleBot.fsproj": {}
+  },
+  "projects": {
+    "D:\\ItuGit\\Functional programming\\NewGroupAssignments\\ScrabbleTemplate\\ScrabbleBot\\ScrabbleBot.fsproj": {
+      "version": "2.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ItuGit\\Functional programming\\NewGroupAssignments\\ScrabbleTemplate\\ScrabbleBot\\ScrabbleBot.fsproj",
+        "projectName": "scumbot",
+        "projectPath": "D:\\ItuGit\\Functional programming\\NewGroupAssignments\\ScrabbleTemplate\\ScrabbleBot\\ScrabbleBot.fsproj",
+        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
+        "outputPath": "D:\\ItuGit\\Functional programming\\NewGroupAssignments\\ScrabbleTemplate\\ScrabbleBot\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/jesper-bengtson/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FParsec": {
+              "target": "Package",
+              "version": "[1.1.1, )",
+              "generatePathProperty": true
+            },
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[5.0.1, )",
+              "generatePathProperty": true
+            },
+            "Oxyphenbutazone": {
+              "target": "Package",
+              "version": "[1.0.6, )",
+              "generatePathProperty": true
+            },
+            "ScrabbleServer": {
+              "target": "Package",
+              "version": "[1.0.7, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+
+use to build:
+fslex --unicode filename.fsl
+
+use to run: 
+fsc -r FsLexYacc.Runtime.dll filename.fs
+
+run exe:
+mono filename.exe

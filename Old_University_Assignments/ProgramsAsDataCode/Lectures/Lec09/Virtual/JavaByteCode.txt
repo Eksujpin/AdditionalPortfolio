@@ -1,0 +1,75 @@
+
+  public static void SelectionSort(int[]);
+    descriptor: ([I)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=4, args_size=1
+
+                      // int i = 0
+         0: iconst_0  //load the int value 0 onto the stack
+         1: istore_1  //store int value into variable 1
+         2: iload_1   //load an int value from local variable 1
+
+                      //i < arr.length
+         3: aload_0   //load a reference onto the stack from local variable 0
+         4: arraylength //get the length of an array
+         5: if_icmpge   57 //if is greater than or equal to, branch to instruction at branchoffset
+
+                      // int least = i
+         8: iload_1   //load an int value from local variable 1
+         9: istore_2  //store int value into variable 2
+
+                     // int j = i + 1
+        10: iload_1  //load an int value from local variable 1
+        11: iconst_1 //load the int value 1 onto the stack
+        12: iadd     //add two ints
+        13: istore_3 //store int value into variable 3
+
+                     //j < arr.length
+        14: iload_3  //load an int value from local variable 3
+        15: aload_0  //load a reference onto the stack from local variable 0
+        16: arraylength //get the length of an array
+        17: if_icmpge     37 //if is greater than or equal to, branch to instruction at branchoffset
+
+                     // if arr[j] < arr[least]
+        20: aload_0  //load a reference onto the stack from local variable 0
+        21: iload_3  //load an int value from local variable 3
+        22: iaload   //load an int from an array
+        23: aload_0  //load a reference onto the stack from local variable 0
+        24: iload_2  //load an int value from local variable 2
+        25: iaload   //load an int from an array
+        26: if_icmpge     31 //if is greater than or equal to, branch to instruction at branchoffset
+
+                     // least = j
+        29: iload_3  //load an int value from local variable 3
+        30: istore_2 //store int value into variable 2
+
+                     // j++
+        31: iinc          3, 1 //increment local variable by signed byte
+        34: goto          14   // go to 14
+
+                     // int tmp = arr[i]
+        37: aload_0  //load a reference onto the stack from local variable 0
+        38: iload_1  //load an int value from local variable 1
+        39: iaload   //load an int from an array
+        40: istore_3 //store int value into variable 3
+
+                    // arr[i] = arr[least]
+        41: aload_0  //load a reference onto the stack from local variable 0
+        42: iload_1  //load an int value from local variable 1
+        43: aload_0  //load a reference onto the stack from local variable 0
+        44: iload_2  //load an int value from local variable 2
+        45: iaload   //load an int from an array
+        46: iastore  //store an int into an array
+
+                     // arr[least] = tmp
+        47: aload_0  //load a reference onto the stack from local variable 0
+        48: iload_2  //load an int value from local variable 2
+        49: iload_3  //load an int value from local variable 3
+        50: iastore  //store an int into an array
+
+                          // i++
+        51: iinc          1, 1 //increment local variable by signed byte
+        54: goto          2    // go to 2
+
+        57: return // return

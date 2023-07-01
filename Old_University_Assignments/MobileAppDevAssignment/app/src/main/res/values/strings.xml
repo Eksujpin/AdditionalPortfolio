@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">ScooterSharing</string>
+
+
+    <!-- Textfields -->
+    <string name="info_text">Info: </string>
+    <string name="scooter_text">Name: </string>
+    <string name="Location_text">Location: </string>
+
+    <!-- userpage -->
+    <string name="user_name">User Name: </string>
+    <string name="user_mail">Mail: </string>
+    <string name="edit_user">edit profile name</string>
+    <string name="sign_out">SIGN OUT</string>
+
+    <!-- EditUserPage -->
+    <string name="current_username">Current username: </string>
+    <string name="update_username">Update username</string>
+    <string name="new_username">new user name: </string>
+    <string name="back_button">BACK</string>
+
+    <!-- Buttons -->
+    <string name="add_ride">ADD RIDE</string>
+    <string name="edit_ride">UPDATE RIDE</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">3067016443540624</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb3067016443540624</string>
+
+
+    <!--Menu items Top-->
+    <string name="top_menu_two">add new scooter</string>
+    <string name="content_description_add_scooter">add new scooter</string>
+
+
+    <!--Menu items Bottom-->
+    <string name="bottom01">Map</string>
+    <string name="bottom02">Scooters</string>
+    <string name="bottom03">Ride</string>
+    <string name="bottom04">Profile</string>
+
+    <!--Card strings-->
+    <string name="action_1">Reserve</string>
+    <string name="scooter_model">Model:</string>
+
+    <string-array name="scooter_models">
+        <item>S1MPLE</item>
+        <item>BOOMBI4</item>
+        <item>ELECTRONIC</item>
+        <item>B1T</item>
+        <item>PERFECTO</item>
+    </string-array>
+
+    <!-- ride page -->
+    <string name="scan_qr_code">SCAN SCOOTER QR CODE</string>
+    <string name="result_not_found">Result Not Found</string>
+    <string name="scooter_battery">Battery: </string>
+    <string name="ride_status">Status: </string>
+    <string name="ride_distance">Distance: </string>
+    <string name="rental_time">Rental Time: </string>
+    <string name="cancel_reservation">Cancel Reservation</string>
+    <string name="start_ride">Start Ride</string>
+    <string name="end_ride">End Ride</string>
+    <string name="rental_price">Rental Price: </string>
+    <string name="scootersharing">ScooterSharing</string>
+
+
+</resources>

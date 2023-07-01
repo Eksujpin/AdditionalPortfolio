@@ -1,0 +1,63 @@
+
+PLC 7.1:
+Abstract syntax tree of ex1.c
+______________________________________________________________________________________
+Prog
+[Fundec
+   (None,"main",[(TypI, "n")],
+    Block
+      [Stmt
+         (While
+            (Prim2 (">",Access (AccVar "n"),CstI 0),
+             Block
+               [Stmt (Expr (Prim1 ("printi",Access (AccVar "n"))));
+                Stmt
+                  (Expr
+                     (Assign
+                        (AccVar "n",Prim2 ("-",Access (AccVar "n"),CstI 1))))]));
+       Stmt (Expr (Prim1 ("printc",CstI 10)))])]
+______________________________________________________________________________________
+- Declarations:
+    Fundec 
+
+- Statements:
+    Block, Stmt, While, Expr
+
+- types:
+    TypI (int)
+
+  - expressions:
+	Prim2, Access, Accvar, CstI, Prim1, Assign
+______________________________________________________________________________________
+
+PLC 7.2: Created files in microC folder;
+ex7.2i.c
+ex7.2ii.c
+ex7.2iii.c
+______________________________________________________________________________________
+
+PLC 7.3: 
+Changed files: at comments "exercise 7.3"
+CLex.fsl
+CPar.fsy
+
+Created files in microC folder:
+ex7.3i.c
+ex7.3ii.c
+ex7.3iii.c
+
+______________________________________________________________________________________
+
+PLC 7.4
+added the syntax for PreInc and PreDec forom the book to Absyn.fs
+also modifed interp.fs eval function find by "exercise 7.4" comment
+
+
+______________________________________________________________________________________
+
+PLC 7.5
+Changed files: at comments "exercise 7.5"
+CLex.fsl
+CPar.fsy
+
+

@@ -1,0 +1,1 @@
+Vi har ikke kunne nå flere tests, da det har taget væsentligt mere tid pr. metode i TaskRepository at implementere og teste metoderne.

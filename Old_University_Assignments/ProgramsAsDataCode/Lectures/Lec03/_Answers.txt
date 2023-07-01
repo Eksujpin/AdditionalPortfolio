@@ -1,0 +1,45 @@
+
+PLC 3.3
+Main => 
+Expr EOF =>
+LET NAME EQ Expr IN Expr END EOF =>
+LET NAME EQ Expr IN Expr TIMES Expr END EOF =>
+LET NAME EQ Expr IN Expr TIMES CSTINT END EOF =>
+LET NAME EQ Expr IN Expr PLUS Expr TIMES CSTINT END EOF =>
+LET NAME EQ Expr IN Expr PLUS CSTINT TIMES CSTINT END EOF =>
+LET NAME EQ Expr IN NAME PLUS CSTINT TIMES CSTINT END EOF =>
+LET NAME EQ LPAR Expr RPAR IN NAME PLUS CSTINT TIMES CSTINT END EOF =>
+LET NAME EQ LPAR CSTINT RPAR IN NAME PLUS CSTINT TIMES CSTINT END EOF =>
+let z = (17) in z + 2 * 3 end EOF
+
+PLC 3.4 
+picture: PLC_3_4_tree.PNG
+
+PLC 3.5
+ran examples from book wth following snipets as examples of results
+build.exe
+run.exe
+open Parse;;
+
+fromString "1 + 2 * 3";; ---result--> val it : Absyn.expr = Prim ("+", CstI 1, Prim ("*", CstI 2, CstI 3))
+
+fromString "x++";; ---result--> System.Exception: parse error near line 1, column 3
+
+fromString "let z = (17) in z + 2 * 3 end";; ---result--> val it : Absyn.expr = Let ("z", CstI 17, Prim ("+", Var "z", Prim ("*", CstI 2, CstI 3)))
+
+clean.exe to ceanup nicely
+
+PLC 3.6: 
+added code to file: Expr.fs
+
+PLC 3.7: 
+files changed: Absyn.fs - ExprPar.fsy - ExprLex.fslopen
+
+tested with ->
+build.exe
+run.exe
+open Parse;;
+
+fromString "1 ? 2 : 3";; ---result--> val it : Absyn.expr = If (CstI 1, CstI 2, CstI 3)
+
+fromString "1 ? (5+5) : (5*5)";; ---result--> val it : Absyn.expr = If (CstI 1, Prim ("+", CstI 5, CstI 5), Prim ("*", CstI 5, CstI 5))

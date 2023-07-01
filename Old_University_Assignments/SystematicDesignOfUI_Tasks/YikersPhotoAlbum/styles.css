@@ -1,0 +1,208 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+ }
+
+.headerElement{
+    font-size: x-large;
+    padding: 8px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.headerElementLogo{
+    width: 100%;
+}
+
+.themed{
+    background-color: #fffff4;
+    color: black;
+    font-family: 'Noto Serif', serif;
+}
+
+.themeArea{
+    position: relative;
+    font-size: medium;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropbtn{
+    outline: none;
+}
+
+.themeMenuContent {
+    display: none;
+    position: absolute;
+    overflow: auto;
+}
+
+.show {display: block;}
+
+
+.singlePicture{
+    padding: 8px;
+    border: 1px dotted black;
+    box-sizing: border-box;
+    max-width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.singlePicture img{
+    max-width: 100%;
+    max-height: 250px;
+}
+
+.singlePicture p{
+    font-size: x-large;
+}
+
+.goToBottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.genericButton{
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.box{
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.genericButton:hover{
+    background-color: whitesmoke;
+}
+
+.genericCentering{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.backToTop, .toBottom, .uploadButton{
+    margin: 4px;
+}
+
+#imagesHere{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.backButton{
+    width: 128px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: x-large;
+    font-weight: bold;
+    color: peru;
+}
+
+.helpSection{
+    margin-left: 16px;
+    margin-bottom: 30px;
+    cursor: default;
+}
+
+.FAQelement{
+    margin-bottom: 32px;
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.FAQquestion{
+    margin-bottom: 8px;
+    font-size: large;
+    font-weight: bolder;
+    color: teal;
+}
+
+.FAQanswer{
+    font-size: medium;
+    margin-right: 20px;
+}
+
+.howToUseElement{
+    margin-left: 16px;
+    margin-top: 10px;
+    font-size: medium;
+    line-height: 24px;
+}
+
+.inputButton{
+    display: none;
+}
+
+.textPositioning{
+    max-width: 40px;
+    max-height: 20px;
+    margin-right: 15px;
+}
+
+.userText{
+    -webkit-text-stroke: thin black;
+    position: absolute;
+    font-family: Arial, sans-serif;
+    background: none;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.footerDiv {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.howToUseList{
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-left: 16px;
+    margin-right: 32px;
+}
+
+.mainScrollableContent{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.editMode{
+    display: none;
+    justify-content: space-around;
+}
+
+.editButton{
+    background-color: inherit;
+}
+
+.activeEdit{
+    background-color: green;
+}
+
+.infoText{
+    margin-left: 45px;
+}

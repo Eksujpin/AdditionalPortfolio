@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lav din egen fotobog">
+    <meta name="keywords" content="Fotobog,billedbog,fotoalbum,album,børnebog,rejsebog,skoleopgave">
+    <meta name="author" content="Christoffer Fuglö Olesen, Johannes Porsgaard, Jonas Borella Jakobsen, Michael Maurer, Mikkel Rahlff Berggreen">
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/nimbus-sans-l" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/carlito" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 480px)" href="enhanced.css">
+
+    <script src="script.js"></script>
+
+    <title>Yikers Foto Album</title>
+</head>
+<body class="themed" onload="addDefaultImgs()">
+    <header class="sticky themed">
+        <a href="index.html" class="headerElement headerElementLogo">Yikers Foto Album</a>
+
+        <button onclick="scrollToUpload()" class="headerElement addPhoto genericButton box" title="Tilføj et billede">Tilføj billede</button>
+        <button id="editButton" class="genericButton box editButton"onclick="toggleEditMode()">
+            <img  src="assets/ic_mode_edit_48px.svg" title="Rediger billeder">
+        </button>
+
+        <a href="help.html" class="headerElement genericButton" title="Information og hjælp">
+            <img src="assets/ic_help_outline_24px.svg" alt="Help">
+        </a>
+    </header>
+
+    <div class="themeArea">
+        <button class="genericButton box dropbtn" id="currentTheme" onclick="openDropdown()">Tema: Standard</button>
+        <div id="themeDropDown" class="themeMenuContent">
+            <button onclick="changeThemeToDefault()" class="genericButton box" title="Skift til Standardtema">Standard</button>
+            <button onclick="change_theme(0)" class="genericButton box" title="Skift til Børnebogstema">Børnebog</button>
+            <button onclick="change_theme(1)" class="genericButton box" title="Skift til Rejsebogstema">Rejsebog</button>
+            <button onclick="change_theme(2)" class="genericButton box" title="Skift til Formelt tema">Formel</button>
+        </div>
+    </div>
+
+    <section class="themed">
+        <div class="goToBottom">
+            <button class="toBottom genericButton box" onclick="scrollToBottomOfAlbum()" title="Gå til bunden af dine billeder">
+                Gå til bunden
+            </button>
+        </div>
+
+        <div id="imagesHere">
+        </div>
+
+        <div class="genericCentering">
+            <button class="backToTop genericButton box" onclick="scrollToTop()" title="Gå til toppen af dine billeder">Gå til toppen</button>
+        </div>
+    </section>
+
+    <hr id="splitLine" style="border: 1px solid black;" />
+
+    <form id="uploadArea">
+        <h1 class="genericCentering">Upload et billede</h1>
+        <div class="genericCentering">
+            <label class="uploadButton genericButton box" for="uploadType" title="Hent et af dine egne billeder">
+                Upload
+                <input class="inputButton" type ='file' id="uploadType" onchange="makeVisible('myImg')"/>
+            </label>
+        </div>
+        <div class="genericCentering">
+            <label title="Giv dit billede en titel">Titel: </label>
+            <input type="text" id="captionInput" onkeyup="updateText()">
+        </div>
+
+        <div class="genericCentering">
+            <div class ="singlePicture" title="Dit billede vil vises her">
+                <img id="myImg" src="data:," alt="Dit billede"><!--This img will be populated later, so for now it displays nothing-->
+                <p class="userText" id="userText"></p>
+            </div>
+        </div>
+        <div class="genericCentering">
+            <div class="box">
+                <label class="genericCentering">Tilføj tekst på dit billede</label>
+                <div class="genericCentering">
+                    <label title="Her kan du tilføje tekst på dit billede" for="textInput">Tekst: </label>
+                    <input type="text" name="textInput" id="textInput" onkeyup="updateText()">
+                </div>
+                <label class="infoText"> Flyt din tekst: </label>
+                <div class="genericCentering">
+                    <label title="X værdien ændrer tekstens vandrette position på billedet" for="horizontal">X: </label>
+                    <input type="number" class="textPositioning" name="horizontal" id="horizontal" oninput="updatePos()" min="0" value="0">
+                    <label title="Y værdien ændrer tekstens lodrette position på billedet" for="vertical">Y: </label>
+                    <input type="number" class="textPositioning" name="vertical" id="vertical" oninput="updatePos()" min="0" value="0">
+                    <label title="R værdien ændrer tekstens rotation på billedet" for="rotation">R: </label>
+                    <input type="number" class="textPositioning" name="rotation" id="rotation" oninput="updatePos()" min="-180" max="180" value="0">
+                </div>
+                <div class="genericCentering">
+                    <label title="Her kan du ændre tekstens farve" for="colorSelect">Farve: </label>
+                    <input type="color" class="textPositioning" name="colorSelect" id="colorSelect" title="Her kan du ændre tekstens farve" onchange="updateText()" value="#ffffff">
+                    <label title="Her kan du ændre tekstens størrelse" for="textSize">Tekst størrelse (10-48): </label>
+                    <input type="number" class="textPositioning" name="textSize" id="textSize" oninput="updatePos()" value="18" min = "10" max ="48">
+                </div>
+            </div>
+        </div>
+        <div class="genericCentering">
+            <button class="genericButton box" onclick="addCurrentPictureToAlbum(event)" title="Tryk her for at tilføje det valgte billede og tilhørende tekst til dine billeder">Tilføj til dit album</button>
+        </div>
+    </form>
+
+</body>
+</html>
