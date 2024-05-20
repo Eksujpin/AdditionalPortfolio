@@ -1,9 +1,0 @@
-D:\ItuGit\Functional programming\NewGroupAssignments\ScrabbleTemplate\ScrabbleBot\bin\Debug\net5.0\FSharp.Core.xml
-D:\ItuGit\Functional programming\NewGroupAssignments\ScrabbleTemplate\ScrabbleBot\bin\Debug\net5.0\scumbot.deps.json
-D:\ItuGit\Functional programming\NewGroupAssignments\ScrabbleTemplate\ScrabbleBot\bin\Debug\net5.0\scumbot.dll
-D:\ItuGit\Functional programming\NewGroupAssignments\ScrabbleTemplate\ScrabbleBot\bin\Debug\net5.0\scumbot.pdb
-D:\ItuGit\Functional programming\NewGroupAssignments\ScrabbleTemplate\ScrabbleBot\obj\Debug\net5.0\ScrabbleBot.fsprojAssemblyReference.cache
-D:\ItuGit\Functional programming\NewGroupAssignments\ScrabbleTemplate\ScrabbleBot\obj\Debug\net5.0\ScrabbleBot.AssemblyInfoInputs.cache
-D:\ItuGit\Functional programming\NewGroupAssignments\ScrabbleTemplate\ScrabbleBot\obj\Debug\net5.0\ScrabbleBot.AssemblyInfo.fs
-D:\ItuGit\Functional programming\NewGroupAssignments\ScrabbleTemplate\ScrabbleBot\obj\Debug\net5.0\scumbot.dll
-D:\ItuGit\Functional programming\NewGroupAssignments\ScrabbleTemplate\ScrabbleBot\obj\Debug\net5.0\scumbot.pdb

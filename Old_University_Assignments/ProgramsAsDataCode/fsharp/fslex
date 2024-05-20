@@ -1,4 +1,0 @@
-#!/bin/bash
-BASE=$HOME/bin/fsharp
-FSLEX=$BASE/fslex.exe
-mono $FSLEX --unicode $*
